@@ -1,12 +1,14 @@
 #import "Field.h"
 #import "Player.h"
+#import "Square.h"
 
 
-@implementation Field {
+@implementation Field
 
-}
-+ (instancetype)field {
-	return [[Field alloc] init];
++ (instancetype)fieldWithPosition:(FieldPosition)position {
+	Field *field = [[Field alloc] init];
+	field.position = position;
+	return field;
 }
 
 - (BOOL)isAccessible {

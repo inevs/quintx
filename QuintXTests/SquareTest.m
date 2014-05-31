@@ -6,6 +6,7 @@
 #define HC_SHORTHAND
 #import "OCHamcrest/OCHamcrest.h"
 #import "Square.h"
+#import "Field.h"
 
 
 @interface SquareTest : XCTestCase
@@ -22,11 +23,11 @@
 }
 
 - (void)testFieldsArePositioned {
-	assertThat(square.fields[FieldPositionTopRight], is(notNilValue()));
-	assertThat(square.fields[FieldPositionMiddle], is(notNilValue()));
-	assertThat(square.fields[FieldPositionTopLeft], is(notNilValue()));
-	assertThat(square.fields[FieldPositionBottomLeft], is(notNilValue()));
-	assertThat(square.fields[FieldPositionBottomRight], is(notNilValue()));
+	assertThatUnsignedInteger(((Field *)square.fields[FieldPositionTopLeft]).position, equalToUnsignedInteger(FieldPositionTopLeft));
+	assertThatUnsignedInteger(((Field *)square.fields[FieldPositionTopRight]).position, equalToUnsignedInteger(FieldPositionTopRight));
+	assertThatUnsignedInteger(((Field *)square.fields[FieldPositionMiddle]).position, equalToUnsignedInteger(FieldPositionMiddle));
+	assertThatUnsignedInteger(((Field *)square.fields[FieldPositionBottomLeft]).position, equalToUnsignedInteger(FieldPositionBottomLeft));
+	assertThatUnsignedInteger(((Field *)square.fields[FieldPositionBottomRight]).position, equalToUnsignedInteger(FieldPositionBottomRight));
 }
 
 @end
