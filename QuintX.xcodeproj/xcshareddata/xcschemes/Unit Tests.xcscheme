@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8A7BDD725B9A47FEBC903B4C"
-               BuildableName = "libPods-QuintXTests.a"
-               BlueprintName = "Pods-QuintXTests"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "26A5C604193A19230089475F"
+               BuildableName = "QuintXTests.xctest"
+               BlueprintName = "QuintXTests"
+               ReferencedContainer = "container:QuintX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +27,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "26A5C604193A19230089475F"
+               BuildableName = "QuintXTests.xctest"
+               BlueprintName = "QuintXTests"
+               ReferencedContainer = "container:QuintX.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
