@@ -1,12 +1,6 @@
 #import "Board.h"
 #import "Square.h"
 
-NSUInteger SquarePositionTopLeft = 0;
-NSUInteger SquarePositionTopRight = 1;
-NSUInteger SquarePositionMiddle = 2;
-NSUInteger SquarePositionBottomLeft = 3;
-NSUInteger SquarePositionBottomRight = 4;
-
 @implementation Board
 
 - (id)init {
@@ -19,11 +13,11 @@ NSUInteger SquarePositionBottomRight = 4;
 
 - (void)initializeSquares {
 	_squares = @[
-			[Square square],
-			[Square square],
-			[Square square],
-			[Square square],
-			[Square square]
+			[Square squareWithPosition:SquarePositionTopLeft],
+			[Square squareWithPosition:SquarePositionTopRight],
+			[Square squareWithPosition:SquarePositionMiddle],
+			[Square squareWithPosition:SquarePositionBottomLeft],
+			[Square squareWithPosition:SquarePositionBottomRight]
 	];
 }
 

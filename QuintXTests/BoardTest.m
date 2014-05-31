@@ -1,5 +1,6 @@
 #import <XCTest/XCTest.h>
 #import "Board.h"
+#import "Square.h"
 
 #define MOCKITO_SHORTHAND
 #import "OCMockito/OCMockito.h"
@@ -22,11 +23,11 @@
 }
 
 - (void)testSquaresArePositioned {
-	assertThat(board.squares[SquarePositionTopLeft], is(notNilValue()));
-	assertThat(board.squares[SquarePositionTopRight], is(notNilValue()));
-	assertThat(board.squares[SquarePositionMiddle], is(notNilValue()));
-	assertThat(board.squares[SquarePositionBottomLeft], is(notNilValue()));
-	assertThat(board.squares[SquarePositionBottomRight], is(notNilValue()));
+	assertThatUnsignedInteger(((Square *)board.squares[SquarePositionTopLeft]).position, equalToUnsignedInteger(SquarePositionTopLeft));
+	assertThatUnsignedInteger(((Square *)board.squares[SquarePositionTopRight]).position, equalToUnsignedInteger(SquarePositionTopRight));
+	assertThatUnsignedInteger(((Square *)board.squares[SquarePositionMiddle]).position, equalToUnsignedInteger(SquarePositionMiddle));
+	assertThatUnsignedInteger(((Square *)board.squares[SquarePositionBottomLeft]).position, equalToUnsignedInteger(SquarePositionBottomLeft));
+	assertThatUnsignedInteger(((Square *)board.squares[SquarePositionBottomRight]).position, equalToUnsignedInteger(SquarePositionBottomRight));
 }
 
 @end

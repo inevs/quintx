@@ -30,6 +30,8 @@
 		360E496882FD5279CDAE1763 /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E40DD2AA39429122F3F55 /* Field.m */; };
 		360E496CD6F4798C87385C42 /* SquareTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E45050DFC00FBF441C217 /* SquareTest.m */; };
 		360E4BC32B76F1DB17AAC448 /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E4377FB070FE10F487735 /* GameTest.m */; };
+		360E4DB9244E2AF02F3AAD0E /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E4DDAE5B64963C36D11E5 /* BoardView.m */; };
+		360E4F887950C9ACA5DB9032 /* FieldTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E4BC1B981B3364CB1B7D5 /* FieldTest.m */; };
 		91D5513E233C4D3188C13BD9 /* libPods-QuintXTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D1E2A8DF0B49D39BA6034D /* libPods-QuintXTests.a */; };
 /* End PBXBuildFile section */
 
@@ -72,11 +74,14 @@
 		360E4366F91B72BA5243FB35 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		360E4377FB070FE10F487735 /* GameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTest.m; sourceTree = "<group>"; };
 		360E45050DFC00FBF441C217 /* SquareTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareTest.m; sourceTree = "<group>"; };
+		360E45A3AFE295C4086793E8 /* BoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardView.h; sourceTree = "<group>"; };
 		360E47118C7806E57C5B38BA /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
 		360E47F670D8115F66A629FA /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 		360E4B64192E12AC0008E539 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		360E4BC1B981B3364CB1B7D5 /* FieldTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldTest.m; sourceTree = "<group>"; };
 		360E4BE262791FC2B7A6E7F1 /* BoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardTest.m; sourceTree = "<group>"; };
 		360E4C7EE896FF1172EE6EB2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		360E4DDAE5B64963C36D11E5 /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
 		93D1E2A8DF0B49D39BA6034D /* libPods-QuintXTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuintXTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C934F8770D7B467297271F20 /* Pods-QuintXTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuintXTests.xcconfig"; path = "Pods/Pods-QuintXTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +163,8 @@
 				360E4276EA2314C821EC2171 /* Square.h */,
 				360E40DD2AA39429122F3F55 /* Field.m */,
 				360E42A1C3525EB9E4E35267 /* Field.h */,
+				360E4DDAE5B64963C36D11E5 /* BoardView.m */,
+				360E45A3AFE295C4086793E8 /* BoardView.h */,
 			);
 			path = QuintX;
 			sourceTree = "<group>";
@@ -182,6 +189,7 @@
 				360E40F713D8224D7E111AA7 /* PlayerTest.m */,
 				360E4BE262791FC2B7A6E7F1 /* BoardTest.m */,
 				360E45050DFC00FBF441C217 /* SquareTest.m */,
+				360E4BC1B981B3364CB1B7D5 /* FieldTest.m */,
 			);
 			path = QuintXTests;
 			sourceTree = "<group>";
@@ -263,8 +271,6 @@
 			mainGroup = 26A5C5DB193A19230089475F;
 			productRefGroup = 26A5C5E5193A19230089475F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				26A5C5E3193A19230089475F /* QuintX */,
@@ -340,6 +346,7 @@
 				360E4568A4B16B4FB60ECDA4 /* Board.m in Sources */,
 				360E45D0FC9989995B5116C4 /* Square.m in Sources */,
 				360E496882FD5279CDAE1763 /* Field.m in Sources */,
+				360E4DB9244E2AF02F3AAD0E /* BoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +359,7 @@
 				360E486113CDF672B5D3109A /* PlayerTest.m in Sources */,
 				360E42A04A42E71F9BC7DC3B /* BoardTest.m in Sources */,
 				360E496CD6F4798C87385C42 /* SquareTest.m in Sources */,
+				360E4F887950C9ACA5DB9032 /* FieldTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +562,7 @@
 				26A5C618193A19230089475F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26A5C619193A19230089475F /* Build configuration list for PBXNativeTarget "QuintXTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +571,7 @@
 				26A5C61B193A19230089475F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

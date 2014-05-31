@@ -1,10 +1,12 @@
 #import <Foundation/Foundation.h>
 
-extern NSUInteger SquarePositionTopLeft;
-extern NSUInteger SquarePositionTopRight;
-extern NSUInteger SquarePositionMiddle;
-extern NSUInteger SquarePositionBottomLeft;
-extern NSUInteger SquarePositionBottomRight;
+typedef NS_ENUM(NSUInteger , SquarePosition) {
+	SquarePositionTopLeft,
+	SquarePositionTopRight,
+	SquarePositionMiddle,
+	SquarePositionBottomLeft,
+	SquarePositionBottomRight
+};
 
 @interface Board : NSObject
 

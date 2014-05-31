@@ -1,5 +1,6 @@
 #import "Square.h"
 #import "Field.h"
+#import "Board.h"
 
 NSUInteger FieldPositionTopLeft = 0;
 NSUInteger FieldPositionTopRight = 1;
@@ -8,6 +9,12 @@ NSUInteger FieldPositionBottomLeft = 3;
 NSUInteger FieldPositionBottomRight = 4;
 
 @implementation Square
+
++ (id)squareWithPosition:(SquarePosition)position {
+	Square *square = [[Square alloc] init];
+	square.position = position;
+	return square;
+}
 
 + (instancetype)square {
 	return [[Square alloc] init];
