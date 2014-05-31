@@ -146,25 +146,15 @@
 		26A5C5ED193A19230089475F /* QuintX */ = {
 			isa = PBXGroup;
 			children = (
+				26A5C5EE193A19230089475F /* Supporting Files */,
+				26A5C61C193A33CD0089475F /* Model */,
+				26A5C61D193A33D50089475F /* View */,
 				26A5C5F6193A19230089475F /* AppDelegate.h */,
 				26A5C5F7193A19230089475F /* AppDelegate.m */,
+				26A5C5FF193A19230089475F /* Images.xcassets */,
 				26A5C5F9193A19230089475F /* Main.storyboard */,
 				26A5C5FC193A19230089475F /* MainViewController.h */,
 				26A5C5FD193A19230089475F /* MainViewController.m */,
-				26A5C5FF193A19230089475F /* Images.xcassets */,
-				26A5C5EE193A19230089475F /* Supporting Files */,
-				360E4316FA7BA1D9E45DA9BE /* Game.m */,
-				360E4C7EE896FF1172EE6EB2 /* Game.h */,
-				360E4366F91B72BA5243FB35 /* Player.m */,
-				360E42536E05AF6AA8157D4E /* Player.h */,
-				360E47118C7806E57C5B38BA /* Board.m */,
-				360E47F670D8115F66A629FA /* Board.h */,
-				360E4B64192E12AC0008E539 /* Square.m */,
-				360E4276EA2314C821EC2171 /* Square.h */,
-				360E40DD2AA39429122F3F55 /* Field.m */,
-				360E42A1C3525EB9E4E35267 /* Field.h */,
-				360E4DDAE5B64963C36D11E5 /* BoardView.m */,
-				360E45A3AFE295C4086793E8 /* BoardView.h */,
 			);
 			path = QuintX;
 			sourceTree = "<group>";
@@ -177,7 +167,7 @@
 				26A5C5F3193A19230089475F /* main.m */,
 				26A5C5F5193A19230089475F /* QuintX-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		26A5C60C193A19230089475F /* QuintXTests */ = {
@@ -200,7 +190,33 @@
 				26A5C60E193A19230089475F /* QuintXTests-Info.plist */,
 				26A5C60F193A19230089475F /* InfoPlist.strings */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26A5C61C193A33CD0089475F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				360E47F670D8115F66A629FA /* Board.h */,
+				360E47118C7806E57C5B38BA /* Board.m */,
+				360E42A1C3525EB9E4E35267 /* Field.h */,
+				360E40DD2AA39429122F3F55 /* Field.m */,
+				360E4C7EE896FF1172EE6EB2 /* Game.h */,
+				360E4316FA7BA1D9E45DA9BE /* Game.m */,
+				360E42536E05AF6AA8157D4E /* Player.h */,
+				360E4366F91B72BA5243FB35 /* Player.m */,
+				360E4276EA2314C821EC2171 /* Square.h */,
+				360E4B64192E12AC0008E539 /* Square.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26A5C61D193A33D50089475F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				360E45A3AFE295C4086793E8 /* BoardView.h */,
+				360E4DDAE5B64963C36D11E5 /* BoardView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,8 +496,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuintX/QuintX-Prefix.pch";
-				INFOPLIST_FILE = "QuintX/QuintX-Info.plist";
+				GCC_PREFIX_HEADER = "QuintX/Supporting Files/QuintX-Prefix.pch";
+				INFOPLIST_FILE = "QuintX/Supporting Files/QuintX-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,8 +510,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuintX/QuintX-Prefix.pch";
-				INFOPLIST_FILE = "QuintX/QuintX-Info.plist";
+				GCC_PREFIX_HEADER = "QuintX/Supporting Files/QuintX-Prefix.pch";
+				INFOPLIST_FILE = "QuintX/Supporting Files/QuintX-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -512,12 +528,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuintX/QuintX-Prefix.pch";
+				GCC_PREFIX_HEADER = "QuintX/Supporting Files/QuintX-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "QuintXTests/QuintXTests-Info.plist";
+				INFOPLIST_FILE = "QuintXTests/Supporting Files/QuintXTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -535,8 +551,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QuintX/QuintX-Prefix.pch";
-				INFOPLIST_FILE = "QuintXTests/QuintXTests-Info.plist";
+				GCC_PREFIX_HEADER = "QuintX/Supporting Files/QuintX-Prefix.pch";
+				INFOPLIST_FILE = "QuintXTests/Supporting Files/QuintXTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
